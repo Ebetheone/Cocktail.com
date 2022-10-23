@@ -1,0 +1,69 @@
+.body {
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+  width: 1024px;
+  height: 100%;
+  background-color: aliceblue;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.title {
+  font-size: 40px;
+  font-family: cursive;
+}
+.singleCocktail img {
+  max-width: 500px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.singleCocktail {
+  display: flex;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  background-color: rgb(45, 173, 252);
+  width: 1024px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+.text {
+  font-size: 20px;
+  font-family: Georgia, serif;
+}
+.subtitle {
+  font-weight: bold;
+}
+.instructions {
+  display: flex;
+}
+
+.instructions > div {
+  margin-right: 30px;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 600px;
+  }
+  .singleCocktail img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 12px;
+  }
+}

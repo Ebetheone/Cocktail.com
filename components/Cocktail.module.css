@@ -1,0 +1,51 @@
+.con {
+  width: auto;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
+}
+
+.cocktail {
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 30px 20px;
+  border-radius: 10px;
+  width: 200px;
+  height: 330px;
+  background-color: rgb(116, 190, 255);
+  box-shadow: 3px 3px rgb(179, 213, 242);
+}
+
+.img {
+  width: 200px;
+  height: 230px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cocktail h1 {
+  color: white;
+  text-align: center;
+  top: -10px;
+}
+.cocktail p {
+  color: green;
+}
+
+.cocktailList {
+  display: flex;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.cocktail {
+  transition: all 0.2s ease-in-out;
+}
+.cocktail:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px rgb(179, 213, 242);
+}
+.cocktail h1:hover {
+  color: aqua;
+}
