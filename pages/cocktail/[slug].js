@@ -10,7 +10,6 @@ export default function Home() {
   const [singleCocktail, setSingleCocktail] = useState(null);
   axios
     .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + slug)
-    //https://thecocktaildb.com/api.php
     .then((response) => {
       setSingleCocktail(response.data);
       console.log(singleCocktail);
