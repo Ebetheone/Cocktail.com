@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Cocktail from "../components/Cocktail.js";
+import Cocktail from "../components/Cocktail";
 
 import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 export default function Home() {
   const [myCocktailData, setMyCocktailData] = useState([]);
   const [value, setValue] = useState();
@@ -51,16 +52,16 @@ export default function Home() {
     }
   }, [value]);
 
-  function handleChange(event) {
+  function handleChange(event: any) {
     const name = event.target.value;
 
     setValue(name);
   }
-  function handlerChange(event) {
+  function handlerChange(event: any) {
     const type = event.target.value;
     setFilter(type);
   }
-  function handleSubmit(event) {
+  function handleSubmit(event: any) {
     event.preventDefault();
   }
   return (
@@ -96,7 +97,7 @@ export default function Home() {
         </div>
 
         <div className={styles.cocktailList}>
-          {myCocktailData?.map(function (item, id) {
+          {myCocktailData?.map(function (item: any, id: any) {
             return <Cocktail key={id} data={item} />;
           })}
         </div>

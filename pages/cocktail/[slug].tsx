@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import axios from "axios";
 import { useRouter } from "next/router";
-import styles from "./index.module.css";
+import styles from "./style.module.css";
 
 export default function Home() {
   const router = useRouter();
@@ -10,10 +10,10 @@ export default function Home() {
   const [singleCocktail, setSingleCocktail] = useState(null);
   axios
     .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + slug)
-    .then((response) => {
+    .then((response: any) => {
       setSingleCocktail(response.data);
       console.log(singleCocktail);
-    }, []);
+    });
 
   return (
     <body className={styles.body}>
@@ -23,9 +23,7 @@ export default function Home() {
         </a>
       </div>
       <div className={styles.container}>
-        <Head>
-          <title>Cocktail information</title>
-        </Head>
+        <title>Cocktail information</title>
 
         <h1 className={styles.title}>How to make beautiful {slug} cocktail</h1>
         <p>Оруулсан: {singleCocktail?.drinks?.[0]?.dateModified}</p>

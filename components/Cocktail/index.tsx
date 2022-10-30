@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./Cocktail.module.css";
 
-export default function Cocktail(data) {
+export default function Cocktail(data: any) {
   console.log(data);
   return (
     <div className={styles.con}>
