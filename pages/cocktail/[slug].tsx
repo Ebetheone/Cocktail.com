@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import axios from "axios";
 import { useRouter } from "next/router";
 import styles from "./style.module.css";

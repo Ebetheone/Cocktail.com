@@ -71,7 +71,7 @@ export default function Home() {
           Cocktail bla2 tseg com
         </a>
         <div className={styles.search}>
-          <select className={styles.dropdown} onChange={handlerChange} selected>
+          <select className={styles.dropdown} onChange={handlerChange}>
             {" "}
             fdgfd
             <option value="Filter">Filter</option>
